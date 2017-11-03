@@ -1,52 +1,480 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shantiloka Yoga Centre</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/skrollr.min.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-  </head>
-  <body>
-    <div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
-    <div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
-    <div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
-	  <div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
-    <header>
-      <nav class="title-bar docs-bar" data-responsive-toggle="nav-menu" data-hide-for="medium" style="  width: 100%;position: fixed;z-index: 101;">
-      		<button id="menu" class="menu-icon" type="button" data-toggle></button>
-          <div class="title-bar-title docs-bar">Shantiloka Yogacenter</div>
-      </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<title>HappyLoka</title>
 
-      <nav class="top-bar docs-bar" id="nav-menu">
-      		<div class="top-bar-left">
-      				<ul class="docs-bar menu">
-      						<li class="menu-text">Shantiloka Yogacenter</li>
-      				</ul>
-      		</div>
-      		<div class="top-bar-right">
-      				<ul class="medium-horizontal vertical dropdown menu" data-responsive-menu="accordion medium-dropdown">
-                <li><a class="button" href="#home">Home</a></li>
-                <li><a class="button" href="#course">Course</a></li>
-                <li><a class="button" href="#gallery">Gallery</a></li>
-                <li><a class="button" href="#aboutus">About Us</a></li>
-                <li><a class="button" href="#contactus">Contact Us</a></li>
-      				</ul>
-      		</div>
-      </nav>
-    </header>
-    <section id="paramhans-home">
-      
-    </section>
-    <section id="paramhans-course"></section>
-    <section id="paramhans-gallery"></section>
-    <section id="paramhans-aboutus"></section>
-    <section id="paramhans-contactus"></section>
-  </body>
-  <script src="js/app.js"></script>
+	<!-- favicon -->
+    <link rel="shortcut icon" href="images/ico/favicon.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+	<link rel="stylesheet" type="text/css" href="css/unslider.css" />
+	<link rel="stylesheet" type="text/css" href="css/template.css" />
+	<style>
+		p, span {
+			color: black !important;
+		}
+	</style>
+</head>
+
+<body data-target="#nino-navbar" data-spy="scroll">
+
+	<!-- Header
+    ================================================== -->
+	<header id="nino-header">
+		<div id="nino-headerInner">
+			<nav id="nino-navbar" class="navbar navbar-default" role="navigation">
+				<div class="container">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nino-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="homepage.html">Happyloka Yogacenter</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="nino-menuItem pull-right">
+						<div class="collapse navbar-collapse pull-left" id="nino-navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#nino-header">Home <span class="sr-only">(current)</span></a></li>
+								<li><a href="#nino-story">About</a></li>
+								<li><a href="#nino-services">Course</a></li>
+								<li><a href="#nino-ourTeam">Our Team</a></li>
+								<li><a href="#nino-portfolio">Gallery</a></li>
+								<!-- <li><a href="#nino-latestBlog">Blog</a></li> -->
+							</ul>
+						</div><!-- /.navbar-collapse -->
+						<!-- <ul class="nino-iconsGroup nav navbar-nav">
+							<li><a href="#"><i class="mdi mdi-cart-outline nino-icon"></i></a></li>
+							<li><a href="#" class="nino-search"><i class="mdi mdi-magnify nino-icon"></i></a></li>
+						</ul> -->
+					</div>
+				</div><!-- /.container-fluid -->
+			</nav>
+
+			<section id="nino-slider" class="carousel slide container" data-ride="carousel">
+
+			</section>
+		</div>
+	</header><!--/#header-->
+
+	<!-- Story About Us
+    ================================================== -->
+	<section id="nino-story">
+		<div class="container">
+			<h2 class="nino-sectionHeading">
+				<span class="nino-subHeading">What we do</span>
+				Story about us
+			</h2>
+
+			<p align="justify" class="nino-sectionDesc">We are a group of dedicated yoga practitioners eager to share teachings of traditional Hatha Yoga.   We strive to guide an intelligently structured  yoga practice that focuses on the breath, not on perfecting the pose, and that prepares the student to sit in stillness and rejoice in the sweetness of meditation.
+			<br><br>“The breath is the primary tool through which you will be able to access what’s actually happening in your body. It’s the primary tool to activate change in your structure at a deep level, and it’s the primary tool to link your conscious awareness to the process of change. So think of the breath as an internal ﬂashlight, microscope, viewfinder, that helps you discover what’s going on.” ~ Gary Kraftsow<br><br>
+
+			We teach yoga as an inclusive path for transformation of Body, Mind & Spirit, that prepares you on the mat to succeed and thrive out in the world.
+
+			All our teachers are Certified and have years of experience both practicing and teaching yoga in group and private settings.  We welcome the opportunity to have you in a group class or work with you privately to customize a practice that supports your Physical, Emotional & Energetic goals.
+			 </p>
+			<div class="sectionContent">
+				<div class="row nino-hoverEffect">
+					<div class="col-md-4 col-sm-4">
+						<div class="item">
+							<a class="overlay" href="#">
+								<span class="content">
+									<i class="mdi mdi-account-multiple nino-icon"></i>
+									Build Physic
+								</span>
+								<img src="images/files/yoga1.jpeg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="item">
+							<a class="overlay" href="#">
+								<span class="content">
+									<i class="mdi mdi-image-filter-center-focus-weak nino-icon"></i>
+									Stay Calm
+								</span>
+								<img src="images/files/yoga2.jpeg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="item">
+							<a class="overlay" href="#">
+								<span class="content">
+									<i class="mdi mdi-airplay nino-icon"></i>
+									Spread Happiness
+								</span>
+								<img src="images/files/yoga3.jpeg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--/#nino-story-->
+
+    <!-- Services
+    ================================================== -->
+    <section id="nino-services">
+    	<div class="container">
+    		<h2 class="nino-sectionHeading">
+				<span class="nino-subHeading">We work with</span>
+				Varied Courses
+			</h2>
+			<div class="sectionContent">
+				<div class="fw" layout="row">
+					<div class="col-md-4 col-sm-6 item ">
+						<div layout="row">
+							<i class="mdi mdi-human nino-icon fsr"></i>
+							<div>
+								<h4 class="nino-serviceTitle">Hatha Yoga</h4>
+								<p>Hatha yoga is a branch of yoga that emphasizes physical exercises to master the body along with mind exercises to withdraw it from external objects. The word haṭha means "force" in Sanskrit, and may have this association because the early Indians believed that its practice was challenging and "forced its results to happen" on the yogi. The term "Hatha yoga" connotes a system of supplementary physical techniques within the broader concept of Yoga.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 item ">
+						<div layout="row">
+							<i class="mdi mdi-human nino-icon fsr"></i>
+							<div>
+								<h4 class="nino-serviceTitle">Vinyasa Yoga</h4>
+								<p>Vinyasa is a style of yoga characterized by stringing postures together so that you move from one to another, seamlessly, using breath.  Commonly referred to as “flow” yoga, it is sometimes confused with “power yoga“.
+
+Vinyasa classes offer a variety of postures and no two classes are ever alike.  The opposite would be “fixed forms” such as Bikram Yoga, which features the same 26 postures in every class, or Ashtanga which has the same sequence every time.
+
+The variable nature of Vinyasa Yoga helps to develop a more balanced body as well as prevent repetitive motion injuries that can happen if you are always doing the same thing every day.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 item ">
+						<div layout="row">
+							<i class="mdi mdi-human nino-icon fsr"></i>
+							<div>
+								<h4 class="nino-serviceTitle">Sivananda Yoga</h4>
+								<p>Sivananda yoga, after teachings of Swami Sivananda, is a non-proprietary form of hatha yoga in which the training focuses on preserving the health and wellness of the practitioner. The Sivananda training system aims to retain the vitality of the body and decrease chance of disease, by simply and naturally cultivating the body. The system philosophies are summarized in 5 principles.
+									<ul style="color:black" >
+										<li>Proper exercise: Asanas</li>
+										<li>Proper breathing: Pranayama</li>
+										<li>Proper relaxation: Savasana</li>
+										<li>Proper diet: Vegetarian.</li>
+										<li>Positive thinking and meditation: Vedanta and Dhyana</li>
+									</ul>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 item ">
+						<div layout="row">
+							<i class="mdi mdi-human nino-icon fsr"></i>
+							<div>
+								<h4 class="nino-serviceTitle">Yin Yoga</h4>
+								<p>Yin yoga is a slow-paced style of yoga with postures, or asanas, that are held for longer periods of time—for beginners, it may range from 45 seconds to two minutes; more advanced practitioners may stay in one asana for five minutes or more.
+									 Yin yoga poses apply moderate stress to the connective tissues of the body—the tendons, fascia, and ligaments—with the aim of increasing circulation in the joints and improving flexibility. A more meditative approach to yoga, yin aims at cultivating awareness of inner silence, and bringing to light a universal, interconnecting quality.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 item ">
+						<div layout="row">
+							<i class="mdi mdi-human nino-icon fsr"></i>
+							<div>
+								<h4 class="nino-serviceTitle">APM Yoga</h4>
+								<p>As the acronym suggests APM is the thoughtful combination of Asana, Pranayama, and Meditation. It is a prudent blend of above three to achieve the desired objectives in case of a practitioner. The APM enables an instructor to choose such asanas, breathing techniques and systems of meditation as are suitable to enhance the strength, stamina, harmony, and calmness for the practitioner.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 item ">
+						<div layout="row">
+							<i class="mdi mdi-human nino-icon fsr"></i>
+							<div>
+								<h4 class="nino-serviceTitle">Core Hatha</h4>
+								<p>HATHA CORE are balanced Hatha Yoga classes with a specific core focus.
+									 Physically, your core is your power centre: it is the area of your abdomen, back, buttocks, upper hamstrings, pelvic floor, and hip flexors.
+									 Learn how each posture can be a “core” posture and how moving at a slower pace can help build core strength, awareness and stability. Explore how breath can support and strengthen the core as well.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </section><!--/#nino-services-->
+
+    <!-- Unique Design
+    ================================================== -->
+    <section id="nino-uniqueDesign">
+    	<div class="container">
+    		<h2 class="nino-sectionHeading">
+				<span class="nino-subHeading">For Everyone</span>
+				Unique Teaching Approach
+			</h2>
+			<div class="sectionContent">
+				<div class="nino-devices">
+					<img class="tablet" src="images/files/yoga4.jpeg" style="width=50%" alt="">
+					<!-- <img class="mobile" src="images/files/yoga5.jpeg" alt=""> -->
+				</div>
+			</div>
+    	</div>
+    </section><!--/#nino-uniqueDesign-->
+
+    <!-- Our Team
+    ================================================== -->
+	<section id="nino-ourTeam">
+		<div class="container">
+			<h2 class="nino-sectionHeading">
+				<span class="nino-subHeading">Who we are</span>
+				Meet our team
+			</h2>
+			<p class="nino-sectionDesc">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+			<div class="sectionContent">
+				<div class="row nino-hoverEffect">
+					<div class="col-md-4 col-sm-4">
+						<div class="item">
+							<div class="overlay" href="#">
+								<div class="content">
+									<a href="#" class="nino-icon"><i class="mdi mdi-facebook"></i></a>
+									<a href="#" class="nino-icon"><i class="mdi mdi-twitter"></i></a>
+									<a href="#" class="nino-icon"><i class="mdi mdi-pinterest"></i></a>
+									<a href="#" class="nino-icon"><i class="mdi mdi-instagram"></i></a>
+								</div>
+								<img src="images/files/Vrinda.jpg" alt="">
+							</div>
+						</div>
+						<div class="info">
+							<h4 class="name">Vrinda</h4>
+							<span class="regency">Hatha Yoga Instructor</span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="item">
+							<div class="overlay" href="#">
+								<div class="content">
+									<a href="#" class="nino-icon"><i class="mdi mdi-facebook"></i></a>
+									<a href="#" class="nino-icon"><i class="mdi mdi-twitter"></i></a>
+									<a href="#" class="nino-icon"><i class="mdi mdi-pinterest"></i></a>
+									<a href="#" class="nino-icon"><i class="mdi mdi-instagram"></i></a>
+								</div>
+								<img src="images/files/Vrinda.jpg" alt="">
+							</div>
+						</div>
+						<div class="info">
+							<h4 class="name">Vrinda</h4>
+							<span class="regency">Hatha Yoga Instructor</span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="item">
+							<div class="overlay" href="#">
+								<div class="content">
+									<a href="#" class="nino-icon"><i class="mdi mdi-facebook"></i></a>
+									<a href="#" class="nino-icon"><i class="mdi mdi-twitter"></i></a>
+									<a href="#" class="nino-icon"><i class="mdi mdi-pinterest"></i></a>
+									<a href="#" class="nino-icon"><i class="mdi mdi-instagram"></i></a>
+								</div>
+								<img src="images/files/Vrinda.jpg" alt="">
+							</div>
+						</div>
+						<div class="info">
+							<h4 class="name">Vrinda</h4>
+							<span class="regency">Hatha Yoga Instructor</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--/#nino-ourTeam-->
+
+	<!-- Portfolio
+    ================================================== -->
+	<section id="nino-portfolio">
+		<div class="container">
+			<h2 class="nino-sectionHeading">
+				<span class="nino-subHeading">What we do</span>
+				Gallery
+			</h2>
+			<p class="nino-sectionDesc">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+		</div>
+		<div class="sectionContent">
+			<ul id="gallery" class="nino-portfolioItems">
+
+			</ul>
+		</div>
+	</section><!--/#nino-portfolio-->
+
+	<!-- Testimonial
+    ================================================== -->
+    <section class="nino-testimonial bg-white">
+    	<div class="container">
+    		<div class="nino-testimonialSlider">
+				<ul>
+					<li>
+						<div layout="row" class="verticalCenter">
+							<div class="nino-avatar fsr">
+								<img class="img-circle img-thumbnail" src="images/files/Vrinda.jpg" alt="">
+							</div>
+							<div>
+								<p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+								<span class="name">Vrinda</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div layout="row" class="verticalCenter">
+							<div class="nino-avatar fsr">
+								<img class="img-circle img-thumbnail" src="images/files/Vrinda.jpg" alt="">
+							</div>
+							<div>
+								<p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+								<span class="name">Vrinda</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div layout="row" class="verticalCenter">
+							<div class="nino-avatar fsr">
+								<img class="img-circle img-thumbnail" src="images/files/Vrinda.jpg" alt="">
+							</div>
+							<div>
+								<p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+								<span class="name">Vrinda</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+    	</div>
+    </section><!--/#nino-testimonial-->
+    <!-- Map
+    ================================================== -->
+    <section id="nino-map">
+    	<div class="container">
+    		<h2 class="nino-sectionHeading">
+    			<i class="mdi mdi-map-marker nino-icon"></i>
+    			<span class="text">Open map</span>
+    			<span class="text" style="display: none;">Close map</span>
+    		</h2>
+    		<div class="mapWrap">
+					<!--  -->
+	    		<iframe
+					src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCdOQCWVB1cfh86RIREFHQle-9ZsOtQCMo&q=Bellandur&center=12.9244154,77.6742475"
+					width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+	    	</div>
+    	</div>
+    </section><!--/#nino-map-->
+
+    <!-- Footer
+    ================================================== -->
+    <footer id="footer">
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-4">
+        			<div class="colInfo">
+	        			<div class="footerLogo">
+	        				<a style="color:black" href="#" >Happy Loka</a>
+	        			</div>
+	        			<p>
+									<b>Address</b>: Near CCD, Bellandur<br>
+									<b>Contact Number</b>: +91 9945436142
+	        			</p>
+	        			<div class="nino-followUs">
+	        				<!-- <div class="totalFollow"><span>5k</span> followers</div> -->
+	        				<div class="socialNetwork">
+	        					<span class="text">Follow Us: </span>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-facebook"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-twitter"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-instagram"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-pinterest"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-google-plus"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-youtube-play"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-dribbble"></i></a>
+	        					<a href="" class="nino-icon"><i class="mdi mdi-tumblr"></i></a>
+	        				</div>
+	        			</div>
+	        			<form action="" class="nino-subscribeForm">
+	        				<div class="input-group input-group-lg">
+								<input type="email" class="form-control" placeholder="Your Email" required>
+								<span class="input-group-btn">
+									<button class="btn btn-success" type="submit">Subscribe</button>
+								</span>
+							</div>
+	        			</form>
+        			</div>
+        		</div>
+        		<div class="col-md-4 col-sm-6">
+
+        		</div>
+        		<div class="col-md-4 col-sm-6">
+        			<div class="colInfo">
+	        			<h3 class="nino-colHeading">instagram</h3>
+	        			<div class="instagramImages clearfix">
+	        				<a href="#"><img src="images/instagram/img-1.jpg" alt=""></a>
+	        				<a href="#"><img src="images/instagram/img-2.jpg" alt=""></a>
+	        				<a href="#"><img src="images/instagram/img-3.jpg" alt=""></a>
+	        				<a href="#"><img src="images/instagram/img-4.jpg" alt=""></a>
+	        				<a href="#"><img src="images/instagram/img-5.jpg" alt=""></a>
+	        				<a href="#"><img src="images/instagram/img-6.jpg" alt=""></a>
+	        				<a href="#"><img src="images/instagram/img-7.jpg" alt=""></a>
+	        				<a href="#"><img src="images/instagram/img-8.jpg" alt=""></a>
+	        				<a href="#"><img src="images/instagram/img-9.jpg" alt=""></a>
+	        				<a href="#"><img src="images/instagram/img-3.jpg" alt=""></a>
+	        				<a href="#"><img src="images/instagram/img-4.jpg" alt=""></a>
+	        				<a href="#"><img src="images/instagram/img-5.jpg" alt=""></a>
+	        			</div>
+	        			<a href="#" class="morePhoto">View more photos</a>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+    </footer><!--/#footer-->
+
+    <!-- Search Form - Display when click magnify icon in menu
+    ================================================== -->
+    <form action="" id="nino-searchForm">
+    	<input type="text" placeholder="Search..." class="form-control nino-searchInput">
+    	<i class="mdi mdi-close nino-close"></i>
+    </form><!--/#nino-searchForm-->
+
+    <!-- Scroll to top
+    ================================================== -->
+	<a href="#" id="nino-scrollToTop">Go to Top</a>
+
+	<!-- javascript -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="js/unslider-min.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+	<script type="text/javascript" src="js/images.js"></script>
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- css3-mediaqueries.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+	    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+</body>
 </html>
