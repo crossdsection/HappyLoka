@@ -80,22 +80,27 @@ jQuery(function($) {
 		return false;
 	});
 
-	var html = '';
-	for( var i in files ){
-		var fileName = files[i];
-		html += '<li class="item">'
-		html += '<a class="nino-prettyPhoto" rel="prettyPhoto[gallery1]" title="Hatha Yoga" href="'+fileName+'">';
-		html += '<img src="'+fileName+'" />';
-		html += '<div class="overlay">';
-		html += '<div class="content">';
-		html += '<i class="mdi mdi-crown nino-icon"></i>';
-		html += '<span class="desc">Lorem ipsum dolor sit</span>';
-		html += '<h4 class="title">Specialized Classes</h4>';
-		html += '</div>';
-		html += '</div>';
-		html += '</a>';
-		html += '</li>';
-	}
-	$("#gallery").append(html);
-	$("a[rel^='prettyPhoto']").prettyPhoto();
+	$.getJSON( "js/images.json", function( data ) {
+		var files = data['gallery'];
+		var html = '';
+		for( var i in files ){
+			var fileName = files[i];
+			html += '<li class="item">'
+			html += '<a class="nino-prettyPhoto" rel="prettyPhoto[gallery1]" title="Hatha Yoga" href="'+fileName+'">';
+			html += '<img src="'+fileName+'" />';
+			html += '<div class="overlay">';
+			html += '<div class="content">';
+			html += '<i class="mdi mdi-crown nino-icon"></i>';
+			html += '<span class="desc">Lorem ipsum dolor sit</span>';
+			html += '<h4 class="title">Specialized Classes</h4>';
+			html += '</div>';
+			html += '</div>';
+			html += '</a>';
+			html += '</li>';
+		}
+		$("#gallery").append(html);
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	}, function( e ){
+		console.log( e );
+	});
 });
