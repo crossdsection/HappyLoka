@@ -113,4 +113,8 @@ jQuery(function($) {
 	}, function( e ){
 		console.log( e );
 	});
+
+	jQuery("#nino-navbar-collapse").on("click", "a", null, function(){
+		jQuery("#nino-navbar-collapse").collapse('hide');
+	});
 });
