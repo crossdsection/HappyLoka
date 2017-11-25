@@ -120,6 +120,7 @@ jQuery(function($) {
 
 	jQuery("#sendMail").on("click", function( e ){
 		e.preventDefault();
+		jQuery("#sendMail").attr('disabled');
 		var email = jQuery("#email").val();
 		var name = jQuery("#name").val();
 		var message = jQuery("#message").val();
