@@ -117,4 +117,31 @@ jQuery(function($) {
 	jQuery("#nino-navbar-collapse").on("click", "a", null, function(){
 		jQuery("#nino-navbar-collapse").collapse('hide');
 	});
+
+	jQuery("#sendMail").on("click", function( e ){
+		e.preventDefault();
+		var email = jQuery("#email").val();
+		var name = jQuery("#name").val();
+		var message = jQuery("#message").val();
+		if( !validateEmail( email ) ){
+			alert("Please Enter a valid email address");
+			return false;
+		}
+		var url = "/mail.php?email=" + email + "&name=" + name + "&message=" + message;
+		jQuery.ajax({
+		    type: "GET",
+		    url: url,
+		    cache: false,
+		    contentType: false,
+		    processData: false,
+		    success:  function(data){
+		        alert(data);
+						window.location.reload();
+		    }
+		});
+	});
+	var validateEmail = function(email) {
+	  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	  return regex.test(email);
+	}
 });

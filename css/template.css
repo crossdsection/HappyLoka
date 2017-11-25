@@ -1315,3 +1315,30 @@ div.pp_default .pp_social {
 		width: 100%;
 	}
 }
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;
+}
+::-moz-placeholder {
+   font-style: italic;
+}
+:-ms-input-placeholder {
+   font-style: italic;
+}
+
+textarea {
+	font-style: italic;
+}
+
+textarea:focus, input:focus, input[type]:focus {
+    border-color: rgba(229, 103, 23, 0.8) !important;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6) !important;
+    outline: 0 none !important;
+}
+
+textarea, input, input[type] {
+    border-color: #ccc !important;
+}
